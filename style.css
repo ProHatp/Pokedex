@@ -15,8 +15,8 @@ body {
 }
 
 .img-logo:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.133);
+  transform: scale(1.133);
 }
 
 .local-pokemons {
@@ -29,23 +29,56 @@ body {
 .pesquisar-pokemon {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: 2rem;
 }
 
-#pesquisar-poke {
-  margin: 0px 10px 0px 0px;
+.input-pesquisar {
+  padding: 0.7rem;
+  margin: 0 0.5rem;
+  border: solid 1px rgba(221, 221, 221, 0.514);
+  border-radius: 0.3rem;
+  outline-color: rgba(0, 0, 0, 0.301);
+  outline-style: ridge;
+  box-shadow: 0 0.2rem 1.6rem rgba(33, 2, 63, 0.993);
+}
+
+.btn-pesquisar{
+  padding: 0.7rem;
+  margin: 0 0.5rem;
+  border: solid 1px rgba(221, 221, 221, 0.514);
+  border-radius: 0.3rem;
+  outline-color: rgba(0, 0, 0, 0.205);
+  outline-width: 1px o;
+  box-shadow: 0 0.2rem 1.6rem rgba(33, 2, 63, 0.993);
 }
 
 .button-carregar {
   margin: 50px;
+  padding: 1rem 5rem;
+  background-color: rgb(120, 41, 156);
+  color: white;
+  font-weight: 500;
+  border: 1px solid rgba(245, 245, 245, 0.082);
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  outline-color: black;
+  outline-width: 1px o;
+  box-shadow: 0 1.2rem 2rem rgba(33, 2, 63, 0.993);
+}
+
+.button-carregar:hover {
+  background-color: rgb(179, 48, 240);
+  box-shadow: 0 1.2rem 2rem rgba(127, 3, 243, 0.993);
+  color: #fff;
+  transform: translateY(-7px);
 }
 
 #button-carregar-mais {
-  padding: 10px 50px 10px 50px;
+  padding: 1rem;
 }
 
 .pokemon {
-  background: linear-gradient(rgba(248, 248, 248, 0.726), rgba(255, 255, 255, 0.800));
+  background: linear-gradient(rgba(11, 53, 245, 0.651), rgba(255, 255, 255, 0.945));
   margin: 10px;
   width: 200px;
   box-shadow: inset 0 0 1em rgb(255, 255, 255), 0 0 1em rgb(153, 151, 151);
@@ -53,7 +86,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   justify-content: start;
-  border-radius: 20px;
+  border-radius: 1rem;
   cursor: pointer;
 }
 
@@ -65,20 +98,11 @@ body {
 
 .poke-img {
   flex-basis: auto;
-  border-radius: 20px 20px 50px 50px;
-  /* filter: brightness(0); */
+  border-radius: 1rem;
+  opacity:1000%;
+  box-shadow:0 0 0.3rem 0;
 }
 
-.local-textos h1 {
-  font-size: 100%;
-}
-
-.local-textos h3 {
-  text-align: start;
-  font-size: 100%;
-  flex-basis: auto;
-  margin: 10px 0px 0px 20px;
-}
 
 /* Classes */
 
@@ -93,8 +117,28 @@ body {
   font-size: 70%;
 }
 
+.local-textos {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  margin: 0.1rem 0.5rem;
+  padding: 0.2rem;
+  text-align: center;
+}
+
+.local-textos h3 {
+  font-size: 80%;
+  flex-basis: auto;
+} 
+
+.local-textos h1 {
+  font-size: 120%;
+} 
+
 .fire {
-  background-color: red;
+  background-color: rgba(255, 72, 0, 0.89);
   color: white;
   padding: 1px 20px 1px 20px;
 }
@@ -106,37 +150,37 @@ body {
 }
 
 .water {
-  background-color: blue;
+  background-color: rgb(0, 174, 255);
   color: white;
   padding: 1px 20px 1px 20px;
 }
 
 .electric {
-  background-color: yellow;
+  background-color: rgba(26, 49, 175, 0.884);
   color: rgb(0, 0, 0);
   padding: 1px 20px 1px 20px;
 }
 
 .rock {
-  background-color: brown;
+  background-color: rgb(75, 43, 24);
   color: white;
   padding: 1px 20px 1px 20px;
 }
 
 .dark {
-  background-color: rgb(41, 41, 41);
-  color: white;
+  background-color: rgba(253, 253, 253, 0.767);
+  color: rgb(0, 0, 0);
   padding: 1px 20px 1px 20px;
 }
 
 .flying {
-  background-color: rgb(179, 179, 58);
+  background-color: rgba(101, 219, 154, 0.918);
   color: white;
   padding: 1px 20px 1px 20px;
 }
 
 .psychic {
-  background-color: rgb(241, 116, 136);
+  background-color: rgb(143, 0, 148);
   color: white;
   padding: 1px 20px 1px 20px;
 }
@@ -172,7 +216,7 @@ body {
 }
 
 .poison {
-  background-color: purple;
+  background-color: rgb(9, 141, 20);
   color: white;
   padding: 1px 20px 1px 20px;
 }
@@ -204,69 +248,69 @@ body {
 /* Background Color */
 
 .back-grass {
-  background: linear-gradient(rgba(38, 251, 0, 0.726), rgba(15, 90, 31, 0.356)) !important;
+  background: linear-gradient(rgba(15, 90, 31, 0.932), rgba(183, 248, 171, 0.849)) !important;
 }
 
 .back-water {
-  background: linear-gradient(rgba(0, 138, 251, 0.726), rgba(21, 48, 110, 0.356)) !important;
+  background: linear-gradient(rgba(3, 70, 226, 0.685), rgb(110, 189, 253)) !important;
 }
 
 .back-fire {
-  background: linear-gradient(rgba(255, 0, 0, 0.726), rgba(255, 159, 5, 0.356)) !important;
+  background: linear-gradient(rgba(255, 38, 0, 0.863), rgba(255, 168, 5, 0.733)) !important;
 }
 
 .back-bug {
-  background: linear-gradient(rgba(21, 255, 0, 0.726), rgba(5, 255, 255, 0.356));
+  background: linear-gradient(rgba(0, 121, 55, 0.877), rgba(5, 255, 193, 0.356));
 }
 
 .back-normal {
-  background: linear-gradient(rgba(42, 44, 42, 0.726), rgba(72, 67, 73, 0.356));
+  background: linear-gradient(rgba(243, 206, 42, 0.829), rgba(5, 137, 245, 0.658));
 }
 
 .back-poison {
-  background: linear-gradient(rgba(163, 24, 105, 0.726), rgba(164, 10, 195, 0.356));
+  background: linear-gradient(rgba(99, 0, 58, 0.788), rgba(221, 50, 255, 0.637));
 }
 
 .back-electric {
-  background: linear-gradient(rgba(157, 160, 10, 0.726), rgba(199, 243, 4, 0.356)) !important;
+  background: linear-gradient(rgba(251, 255, 10, 0.781), rgba(47, 158, 248, 0.952)) !important;
 }
 
 .back-ground {
-  background: linear-gradient(rgba(19, 83, 19, 0.726), rgba(6, 117, 75, 0.356));
+  background: linear-gradient(rgb(95, 46, 1), rgba(247, 210, 130, 0.932));
 }
 
 .back-fairy {
-  background: linear-gradient(rgba(255, 0, 212, 0.726), rgba(250, 9, 170, 0.356));
+  background: linear-gradient(rgba(247, 41, 212, 0.932), rgba(233, 154, 207, 0.356));
 }
 
 .back-psychic {
-  background: linear-gradient(rgba(185, 75, 117, 0.726), rgba(158, 104, 140, 0.356));
+  background: linear-gradient(rgb(121, 0, 168), rgba(241, 3, 162, 0.767));
 }
 
 .back-fighting {
-  background: linear-gradient(rgba(41, 41, 41, 0.726), rgba(16, 13, 17, 0.356));
+  background: linear-gradient(rgb(54, 29, 13), rgba(207, 200, 209, 0.356));
 }
 
 .back-dragon {
-  background: linear-gradient(rgba(0, 195, 255, 0.726), rgba(3, 93, 116, 0.356));
+  background: linear-gradient(rgba(255, 0, 34, 0.712), rgba(66, 4, 146, 0.808));
 }
 
 .back-rock {
-  background: linear-gradient(rgba(92, 34, 0, 0.726), rgba(240, 56, 0, 0.356));
+  background: linear-gradient(rgb(66, 36, 7), rgba(177, 162, 131, 0.932));
 }
 
 .back-dark {
-  background: linear-gradient(rgba(0, 0, 0, 0.726), rgba(13, 9, 14, 0.356));
+  background: linear-gradient(rgba(0, 0, 0, 0.671), rgba(66, 2, 82, 0.781));
 }
 
 .back-ice {
-  background: linear-gradient(rgba(1, 174, 255, 0.726), rgba(0, 162, 255, 0.356));
+  background: linear-gradient(rgb(105, 165, 255), rgba(218, 239, 252, 0.979));
 }
 
 .back-steel {
-  background: linear-gradient(rgba(146, 119, 155, 0.726), rgba(135, 103, 141, 0.356));
+  background: linear-gradient(rgba(65, 69, 71, 0.945), rgba(109, 95, 84, 0.534));
 }
 
 .back-ghost {
-  background: linear-gradient(rgba(121, 6, 92, 0.726), rgba(72, 67, 73, 0.356));
+  background: linear-gradient(rgba(122, 24, 212, 0.849), rgba(239, 204, 247, 0.356));
 }
