@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header id="local-header">
+        <a href="index.html"><img class="img-logo" src="logo.png" alt=""></a>
+    </header>
+
+
+    <div class="container text-center">
+        <div class="local-mesage"></div>
+        <div class="pesquisar-pokemon text-center">
+            <input class="input-group-text" id="pesquisar-poke" type="text" placeholder="Pesquisar pokemon">
+            <button class="btn btn-warning" id="btn-pesquisar">Pesquisar</button>
+        </div>
+
+        <div class="local-pokemons"></div>
+
+        <div class="button-carregar">
+            <button class="btn btn-danger" id="button-carregar-mais">Carregar Mais</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</html>
