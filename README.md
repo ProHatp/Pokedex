@@ -7,7 +7,7 @@ Olá esse e mais um projeto feito por mim do curso da **Trybe**. Tivemos um mome
 
 ## Exemplo de uso
 
-![enter image description here](https://i.imgur.com/PMMjy58.gif)
+![enter image description here](https://github.com/ProHatp/Pokedex/blob/main/uso.gif)
 
 <div>
 <br>
