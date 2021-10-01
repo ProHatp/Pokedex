@@ -52,6 +52,12 @@ btnPesquisar.addEventListener('click', () => {
   inpPesquisar.value = '';
 });
 
+inpPesquisar.addEventListener('keyup', () => {
+  localPokemons.innerHTML = '';
+  const api = `https://pokeapi.co/api/v2/pokemon/${inpPesquisar.value.toLowerCase()}`;
+  gerarPokemons(api);
+});
+
 const pokemons = (data) => {
   let pokemon = data['name'];
   let id = data['id'];
