@@ -12,22 +12,23 @@
 <body>
     <header id="local-header">
         <a href="index.html"><img class="img-logo" src="logo.png" alt=""></a>
+        <p class="caption">Pokedex</p>
     </header>
-
-
+<main>
     <div class="container text-center">
         <div class="local-mesage"></div>
         <div class="pesquisar-pokemon text-center">
-            <input class="input-group-text" id="pesquisar-poke" type="text" placeholder="Pesquisar pokemon">
-            <button class="btn btn-warning" id="btn-pesquisar">Pesquisar</button>
+            <input class="input-pesquisar" id="pesquisar-poke" type="text" placeholder="Pesquisar pokemon">
+            <button class="btn-pesquisar" id="btn-pesquisar">Pesquisar</button>
         </div>
 
         <div class="local-pokemons"></div>
 
-        <div class="button-carregar">
-            <button class="btn btn-danger" id="button-carregar-mais">Carregar Mais</button>
+        <div id="button-carregar-mais">
+            <button class="button-carregar" >Carregar Mais</button>
         </div>
     </div>
+  </main>
 </body>
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>

@@ -16,16 +16,17 @@ const gerarPokemons = (api) => {
     .then((data) => {
       pokemons(data);
     })
-    .catch(()=> {
+    .catch(() => {
       gerarErro('Pokemon ou ID inválidos');
     });
 }
 
 const gerarErro = (frase) => {
-  const localMensagem = document.createElement('div');
-  localMensagem.className = 'alert alert-danger';
-  localMensagem.innerText = frase;
-  localMesage.appendChild(localMensagem);
+  const text  = frase;
+  localMesage.innerHTML=` <div class = 'alert alert-danger'>${text} </div>`
+  setTimeout(() => {
+    localMesage.innerHTML = '';
+  }, 1250)
 }
 
 const iniciarPokedex = (valor) => {
@@ -46,11 +47,26 @@ btnProcurarMais.addEventListener('click', () => {
 
 btnPesquisar.addEventListener('click', () => {
   localPokemons.innerHTML = '';
-  localButtonCarregar.innerHTML = '';
+  // localButtonCarregar.innerHTML = '';
   const api = `https://pokeapi.co/api/v2/pokemon/${inpPesquisar.value.toLowerCase()}`;
   gerarPokemons(api);
   inpPesquisar.value = '';
 });
+
+inpPesquisar.addEventListener('keyup', () => {
+  setTimeout(() => {
+    localPokemons.innerHTML = '';
+    const api = `https://pokeapi.co/api/v2/pokemon/${inpPesquisar.value.toLowerCase()}`;
+    gerarPokemons(api);
+}, 800)
+}, false);
+
+const names = [];
+const makeListName = (data) => {
+names.push(data['name']);
+}
+
+
 
 const pokemons = (data) => {
   let pokemon = data['name'];
